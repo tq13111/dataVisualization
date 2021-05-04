@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd3be98e-dfed-4a7d-8f2f-ea13fced5928" name="默认的" comment="使用 grid 完成内容布局">
+    <list default="true" id="bd3be98e-dfed-4a7d-8f2f-ea13fced5928" name="默认的" comment="背景、边框样式">
+      <change afterPath="$PROJECT_DIR$/src/components/Chart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +56,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620015330209</updated>
-      <workItem from="1620015331286" duration="13127000" />
+      <workItem from="1620015331286" duration="15144000" />
+      <workItem from="1620117131194" duration="7273000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1620019795095</created>
@@ -104,7 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620029892530</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="布局背景样式">
+      <created>1620033585623</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1620033585623</updated>
+    </task>
+    <task id="LOCAL-00009" summary="背景、边框样式">
+      <created>1620033609507</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1620033609507</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +138,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
@@ -127,6 +146,8 @@
     <MESSAGE value="px 转换 rem" />
     <MESSAGE value="添加 header" />
     <MESSAGE value="使用 grid 完成内容布局" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用 grid 完成内容布局" />
+    <MESSAGE value="布局背景样式" />
+    <MESSAGE value="背景、边框样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="背景、边框样式" />
   </component>
 </project>

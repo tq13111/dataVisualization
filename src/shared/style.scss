@@ -33,9 +33,11 @@ body {
   font-family: $font-hei;
   font-size: 16px;
   background: #00020b;
-
+  color:#fff;
 }
-
+h1,h2,h3,h4,h5,h6{
+  font-size: px(16);
+}
 #root {
   margin: 0 auto;
 }

@@ -1,11 +1,16 @@
-const px = (number: number) => number / 2420 * (window as any).pageWidth;
+import {baseChartOptions} from './baseChartOptions';
+import {createEchartsOptions} from '../shared/create-echarts-options';
+import px from '../shared/px';
+import * as  echarts from 'echarts';
+import { EChartsOption } from 'echarts';
 
-export const option1 = {
+
+export const option1 = createEchartsOptions({
+  ...baseChartOptions,
   xAxis: {
     data: ['城关区', '七里河区', '西固区', '安宁区', '红谷区', '永登区', '嘷岚区', '渝中区', '兰州新区'],
     axisTick: {show: false},
     axisLabel: {
-      fontSize: px(12),
       formatter(value) {
         if (value.length > 2) {
           const array = value.split('');
@@ -16,21 +21,8 @@ export const option1 = {
       }
     },
   },
-  textStyle: {
-    fontSize: px(16),
-    color: '#79839E'
-  },
-  grid: {
-    x: px(40),
-    y: px(40),
-    x2: px(40),
-    y2: px(50),
-  },
   yAxis: {
     splitLine: {show: false},
-    axisLabel: {
-      fontSize: px(12),
-    },
     splitNumber: 10
   },
   series: [{
@@ -38,4 +30,72 @@ export const option1 = {
     type: 'bar',
     data: [40, 30, 25, 15, 20, 10, 15, 30, 35]
   }]
-};
+});
+export const option2: EChartsOption = createEchartsOptions({
+  ...baseChartOptions,
+  grid: {
+    x: px(70),
+    y: px(40),
+    x2: px(50),
+    y2: px(60),
+  },
+  legend: {
+    data: ['一队', '二队'],
+    right: 20,
+    bottom: 10,
+    textStyle: {
+      color: '#79839E'
+    }
+  },
+  xAxis: {
+    show: false
+  },
+  yAxis: {
+    type: 'category',
+    axisTick: {show: false},
+    data: ['城关区公安局', '七里河区公安局', '西固区公安局', '安宁区公安局', '红谷区公安局', '永登区公安局', '嘷岚区公安局', '渝中区公安局', '兰州新区公安局'],
+    axisLabel: {
+      formatter(val) {
+        return val.replace('公安局', '\n公安局');
+      }
+    },
+  },
+  series: [
+    {
+      name: '一队',
+      type: 'bar',
+      itemStyle:{
+        normal:{
+          color:new echarts.graphic.LinearGradient(0,0,1,0,[{
+            offset:0,
+            color:'#2034f9'
+          },{
+            offset:1,
+            color:'#04a1ff'
+          }
+          ]),
+          showColor:'rgba(0,0,0,0.4)',
+          shadowBlur:20
+        }
+      },
+      data: [664, 784, 642, 439, 328, 942, 489, 656, 486]
+    },
+    {
+      name: '二队',
+      type: 'bar',
+      itemStyle:{
+        normal:{
+          color:new echarts.graphic.LinearGradient(0,0,1,0,[{
+            offset:0,
+            color:'#b92ae8'
+          },{
+            offset:1,
+            color:'#6773e7'
+          }
+          ])
+        }
+      },
+      data: [600, 700, 500, 300, 555, 775, 516, 994, 446]
+    }
+  ]
+});

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd3be98e-dfed-4a7d-8f2f-ea13fced5928" name="默认的" comment="背景、边框样式">
-      <change afterPath="$PROJECT_DIR$/src/components/Chart.tsx" afterDir="false" />
+    <list default="true" id="bd3be98e-dfed-4a7d-8f2f-ea13fced5928" name="默认的" comment="完成第一个 chart">
+      <change afterPath="$PROJECT_DIR$/src/constant/baseChartOptions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/create-echarts-options.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/px.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constant/option.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constant/option.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/shared" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -45,6 +46,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="O:\T\Desktop\jirengu\dataVisualization\src\shared" />
       <recent name="O:\T\Desktop\jirengu\dataVisualization\src" />
     </key>
   </component>
@@ -57,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1620015330209</updated>
       <workItem from="1620015331286" duration="15144000" />
-      <workItem from="1620117131194" duration="7273000" />
+      <workItem from="1620117131194" duration="13077000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1620019795095</created>
@@ -122,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620033609507</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="完成第一个 chart">
+      <created>1620126896015</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1620126896015</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +157,7 @@
     <MESSAGE value="使用 grid 完成内容布局" />
     <MESSAGE value="布局背景样式" />
     <MESSAGE value="背景、边框样式" />
-    <option name="LAST_COMMIT_MESSAGE" value="背景、边框样式" />
+    <MESSAGE value="完成第一个 chart" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成第一个 chart" />
   </component>
 </project>

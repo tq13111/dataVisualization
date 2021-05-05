@@ -2,7 +2,7 @@ import React from 'react';
 import './home.scss';
 import headerBg from '../images/header.png';
 import Chart from '../components/Chart';
-import {option1} from '../constant/option';
+import {option1,option2} from '../constant/option';
 
 export const Home = () => {
   return (
@@ -14,8 +14,14 @@ export const Home = () => {
             <h2>案发派出所管辖统计</h2>
             <Chart option={option1}/>
           </div>
+          <div className="border 破获排名">
+            <h2>案件破获排名</h2>
+            <Chart option={option2}/>
+          </div>
         </section>
-        <section className="border section2"></section>
+        <section className="border section2">
+
+        </section>
         <section className="border section3"></section>
         <section className="border section4"></section>
         <section className="border section5"></section>

@@ -8,10 +8,24 @@
 
   > header {
     height: px(99);
+    width: px(2420);
+    margin: 0 auto;
     background-size: cover;
   }
 
+  > footer {
+    height: px(68);
+    line-height: px(68);
+    text-align: center;
+    font-size: px(18);
+    color: #243991;
+    background: #0c0d2d;
+    border-top: 1px solid #0d2956;
+  }
+
   > main {
+    width: px(2420);
+    margin: 0 auto;
     flex: 1;
     display: grid;
     grid-template:
@@ -53,7 +67,7 @@
     > .section1 {
       grid-area: box1;
 
-      > .管辖统计 {
+      > .管辖统计, .破获排名 {
         height: px(315);
         display: flex;
         flex-direction: column;
@@ -77,25 +91,7 @@
 
       > .破获排名 {
         height: px(423);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h2 {
-          flex-shrink: 0;
-          border: 1px solid #0a5299;
-          border-bottom-left-radius: 4px;
-          border-bottom-right-radius: 4px;
-          font-size: px(22);
-          line-height: px(24);
-          padding: px(10) px(28);
-          text-shadow: 0 0 px(3) white;
-        }
-
-        .chart {
-          flex: 1;
-          width: 100%;
-        }
+        margin-top: px(16);
       }
 
       > .section2 {

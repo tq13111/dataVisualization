@@ -26,6 +26,7 @@ export const Home = () => {
         <section className="border section4"></section>
         <section className="border section5"></section>
       </main>
+      <footer>大屏数据平台利用大数据技术采集犯罪作案信息是一套实时监控的数据系统 Copyright.2017兰州市公安局</footer>
     </div>
   );
 };

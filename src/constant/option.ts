@@ -41,9 +41,11 @@ export const option2 = createEchartsOptions({
   },
   legend: {
     data: ['一队', '二队'],
-    right: 20,
-    bottom: 10,
+    right: px(15),
+    bottom: px(15),
     textStyle: {color: 'white'},
+    itemWidth:px(40),
+    itemHeight :px(20),
   },
   xAxis: {
     show: false
@@ -132,7 +134,7 @@ export const option3 = createEchartsOptions({
       {
         name: '抢劫',
         type: 'line',
-        data: [1,5, 7, 5, 3, 5, 2,6, 3]
+        data: [1, 5, 7, 5, 3, 5, 2, 6, 3]
       },
       {
         name: '醉驾',
@@ -147,7 +149,7 @@ export const option3 = createEchartsOptions({
       {
         name: '故意杀人',
         type: 'line',
-        data: [11, 8, 1, 3, 10, 9,8, 3, 2]
+        data: [11, 8, 1, 3, 10, 9, 8, 3, 2]
       },
       {
         name: '故意伤人',

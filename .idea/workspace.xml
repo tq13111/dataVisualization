@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd3be98e-dfed-4a7d-8f2f-ea13fced5928" name="默认的" comment="完成footer">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constant/option.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constant/option.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/_helper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/_helper.scss" afterDir="false" />
-    </list>
+    <list default="true" id="bd3be98e-dfed-4a7d-8f2f-ea13fced5928" name="默认的" comment="完成第四、五个chart" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,12 +46,13 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="bd3be98e-dfed-4a7d-8f2f-ea13fced5928" name="默认的" comment="" />
+      <changelist id="" name="修改chart2配置" comment="" />
       <created>1620015330209</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620015330209</updated>
       <workItem from="1620015331286" duration="15144000" />
-      <workItem from="1620117131194" duration="16983000" />
+      <workItem from="1620117131194" duration="19846000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1620019795095</created>
@@ -157,7 +152,42 @@
       <option name="project" value="LOCAL" />
       <updated>1620208896014</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="完成第三个chart">
+      <created>1620303422864</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1620303422864</updated>
+    </task>
+    <task id="LOCAL-00016" summary="完成第三个chart">
+      <created>1620303498895</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1620303498895</updated>
+    </task>
+    <task id="LOCAL-00017" summary="修改chart2配置">
+      <created>1620304244476</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1620304244476</updated>
+    </task>
+    <task id="LOCAL-00018" summary="修改chart2配置">
+      <created>1620304294907</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1620304294907</updated>
+    </task>
+    <task id="LOCAL-00019" summary="完成第四、五个chart">
+      <created>1620305934149</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1620305934149</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +216,9 @@
     <MESSAGE value="完成第一个 chart" />
     <MESSAGE value="完成第二个 chart" />
     <MESSAGE value="完成footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成footer" />
+    <MESSAGE value="完成第三个chart" />
+    <MESSAGE value="修改chart2配置" />
+    <MESSAGE value="完成第四、五个chart" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成第四、五个chart" />
   </component>
 </project>

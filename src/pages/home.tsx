@@ -2,7 +2,7 @@ import React from 'react';
 import './home.scss';
 import headerBg from '../images/header.png';
 import Chart from '../components/Chart';
-import {option1, option2, option3} from '../constant/option';
+import {option1, option2, option3, option4,} from '../constant/option';
 
 export const Home = () => {
   return (
@@ -26,10 +26,34 @@ export const Home = () => {
           </div>
           <div className="border 时段分析">
             <h2>案发时段分析</h2>
-            <Chart option={option3}/>
+            <Chart option={option4}/>
           </div>
         </section>
-        <section className="border section3"></section>
+        <section className="border section3">
+          <div className="战果数对比">
+            <h2>往年战果树对比</h2>
+            <table>
+              <thead>
+              <tr>
+                <th>年份</th><th>破案数</th><th>抓获嫌疑人</th><th>并串案件</th><th>现勘录入</th>
+                <th>视侦录入</th><th>合成案件数</th><th>合计</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>2018</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+              </tr>
+              <tr>
+                <td>2019</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+              </tr>
+              <tr>
+                <td>2020</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+              </tr>
+              </tbody>
+
+            </table>
+          </div>
+        </section>
         <section className="border section4"></section>
         <section className="border section5"></section>
       </main>

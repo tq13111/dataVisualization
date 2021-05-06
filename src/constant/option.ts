@@ -2,7 +2,7 @@ import {baseChartOptions} from './baseChartOptions';
 import {createEchartsOptions} from '../shared/create-echarts-options';
 import px from '../shared/px';
 import * as  echarts from 'echarts';
-import { EChartsOption } from 'echarts';
+import {EChartsOption} from 'echarts';
 
 
 export const option1 = createEchartsOptions({
@@ -31,7 +31,7 @@ export const option1 = createEchartsOptions({
     data: [40, 30, 25, 15, 20, 10, 15, 30, 35]
   }]
 });
-export const option2: EChartsOption = createEchartsOptions({
+export const option2 = createEchartsOptions({
   ...baseChartOptions,
   grid: {
     x: px(70),
@@ -43,9 +43,7 @@ export const option2: EChartsOption = createEchartsOptions({
     data: ['一队', '二队'],
     right: 20,
     bottom: 10,
-    textStyle: {
-      color: '#79839E'
-    }
+    textStyle: {color: 'white'},
   },
   xAxis: {
     show: false
@@ -64,18 +62,18 @@ export const option2: EChartsOption = createEchartsOptions({
     {
       name: '一队',
       type: 'bar',
-      itemStyle:{
-        normal:{
-          color:new echarts.graphic.LinearGradient(0,0,1,0,[{
-            offset:0,
-            color:'#2034f9'
-          },{
-            offset:1,
-            color:'#04a1ff'
+      itemStyle: {
+        normal: {
+          color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
+            offset: 0,
+            color: '#2034f9'
+          }, {
+            offset: 1,
+            color: '#04a1ff'
           }
           ]),
-          showColor:'rgba(0,0,0,0.4)',
-          shadowBlur:20
+          showColor: 'rgba(0,0,0,0.4)',
+          shadowBlur: 20
         }
       },
       data: [664, 784, 642, 439, 328, 942, 489, 656, 486]
@@ -83,14 +81,14 @@ export const option2: EChartsOption = createEchartsOptions({
     {
       name: '二队',
       type: 'bar',
-      itemStyle:{
-        normal:{
-          color:new echarts.graphic.LinearGradient(0,0,1,0,[{
-            offset:0,
-            color:'#b92ae8'
-          },{
-            offset:1,
-            color:'#6773e7'
+      itemStyle: {
+        normal: {
+          color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
+            offset: 0,
+            color: '#b92ae8'
+          }, {
+            offset: 1,
+            color: '#6773e7'
           }
           ])
         }
@@ -99,3 +97,68 @@ export const option2: EChartsOption = createEchartsOptions({
     }
   ]
 });
+export const option3 = createEchartsOptions({
+    legend: {
+      bottom: px(10),
+      textStyle: {color: 'white'},
+      itemWidth: px(30),
+      itemHeight: px(16)
+    },
+    grid: {
+      x: px(20),
+      x2: px(20),
+      y: px(20),
+      y2: px(70),
+      containLabel: true
+    },
+    xAxis: {
+      type: 'category',
+      boundaryGap: false,
+      data: [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
+      splitLine: {show: true, lineStyle: {color: '#073E78'}},
+      axisTick: {show: false},
+      axisLine: {show: false},
+    },
+    yAxis: {
+      type: 'value',
+      splitLine: {lineStyle: {color: '#073E78'}},
+      axisLabel: {
+        formatter(val) {
+          return val / 100 + '%';
+        }
+      }
+    },
+    series: [
+      {
+        name: '抢劫',
+        type: 'line',
+        data: [1,5, 7, 5, 3, 5, 2,6, 3]
+      },
+      {
+        name: '醉驾',
+        type: 'line',
+        data: [4, 5, 7, 3, 2, 1, 4, 5, 2]
+      },
+      {
+        name: '盗窃',
+        type: 'line',
+        data: [10, 7, 9, 6, 5, 7, 3, 6, 1]
+      },
+      {
+        name: '故意杀人',
+        type: 'line',
+        data: [11, 8, 1, 3, 10, 9,8, 3, 2]
+      },
+      {
+        name: '故意伤人',
+        type: 'line',
+        data: [8, 6, 7, 8, 9, 10, 11, 5, 1]
+      }
+    ].map(obj => ({
+      ...obj,
+      symbol: 'circle',
+      symbolSize: px(12),
+      lineStyle: {width: px(2)}
+    }))
+  }
+);

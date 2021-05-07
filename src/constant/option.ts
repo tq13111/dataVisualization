@@ -4,6 +4,7 @@ import px from '../shared/px';
 import * as  echarts from 'echarts';
 import {EChartsOption} from 'echarts';
 
+const colors = {'青海省': '#BB31F7', '甘肃省': '#ddf66a', '四川省': '#06E1EE'};
 
 export const option1 = createEchartsOptions({
   ...baseChartOptions,
@@ -44,8 +45,8 @@ export const option2 = createEchartsOptions({
     right: px(15),
     bottom: px(15),
     textStyle: {color: 'white'},
-    itemWidth:px(40),
-    itemHeight :px(20),
+    itemWidth: px(40),
+    itemHeight: px(20),
   },
   xAxis: {
     show: false
@@ -205,5 +206,71 @@ export const option4 = createEchartsOptions({
         }]),
       }
     }]
+  }
+);
+export const option5: EChartsOption = createEchartsOptions({
+    xAxis: {show: false},
+    yAxis: {show: false},
+    legend: {
+      data: ['甘肃省', '四川省','青海省'],
+      top: px(15),
+      textStyle: {color: 'white'},
+      itemWidth: px(40),
+      itemHeight: px(20),
+    },
+    series: [
+      {
+        name:'甘肃省',
+        type: 'map',
+        mapType: 'CN', // 自定义扩展图表类型
+        data: [
+          {name: '甘肃省', value: 1},
+        ],
+        label: {show: false, color: 'white'},
+        itemStyle: {
+          areaColor: '#010D3D',
+          color: colors['甘肃省'],
+          borderColor: '#01A7F7',
+          emphasis: {
+            label: {color: 'white'},
+            areaColor: '#5470C6',
+          },
+        }
+      },
+      {
+        name:'四川省',
+        type: 'map',
+        mapType: 'CN', // 自定义扩展图表类型
+        data: [
+          {name: '四川省', value: 100},
+        ],
+        itemStyle: {
+          areaColor: '#010D3D',
+          color: colors['四川省'],
+          borderColor: '#01A7F7',
+          emphasis: {
+            label: {color: 'white'},
+            areaColor: '#5470C6',
+          },
+        }
+      },
+      {
+        name:'青海省',
+        type: 'map',
+        mapType: 'CN', // 自定义扩展图表类型
+        data: [
+          {name: '青海省', value: 100},
+        ],
+        itemStyle: {
+          areaColor: '#010D3D',
+          color: colors['青海省'],
+          borderColor: '#01A7F7',
+          emphasis: {
+            label: {color: 'white'},
+            areaColor: '#5470C6',
+          },
+        }
+      },
+    ]
   }
 );

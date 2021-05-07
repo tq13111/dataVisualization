@@ -2,7 +2,7 @@ import React from 'react';
 import './home.scss';
 import headerBg from '../images/header.png';
 import Chart from '../components/Chart';
-import {option1, option2, option3, option4,} from '../constant/option';
+import {option1, option2, option3, option4,option5} from '../constant/option';
 
 export const Home = () => {
   return (
@@ -19,7 +19,7 @@ export const Home = () => {
             <Chart option={option2}/>
           </div>
         </section>
-        <section className=" section2">
+        <section className="section2">
           <div className="border 趋势分析">
             <h2>案发趋势分析</h2>
             <Chart option={option3}/>
@@ -35,26 +35,59 @@ export const Home = () => {
             <table>
               <thead>
               <tr>
-                <th>年份</th><th>破案数</th><th>抓获嫌疑人</th><th>并串案件</th><th>现勘录入</th>
-                <th>视侦录入</th><th>合成案件数</th><th>合计</th>
+                <th>年份</th>
+                <th>破案数</th>
+                <th>抓获嫌疑人</th>
+                <th>并串案件</th>
+                <th>现勘录入</th>
+                <th>视侦录入</th>
+                <th>合成案件数</th>
+                <th>合计</th>
               </tr>
               </thead>
               <tbody>
               <tr>
-                <td>2018</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+                <td>2018</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
               </tr>
               <tr>
-                <td>2019</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+                <td>2019</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
               </tr>
               <tr>
-                <td>2020</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+                <td>2020</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
               </tr>
               </tbody>
 
             </table>
           </div>
         </section>
-        <section className="border section4"></section>
+        <section className="section4">
+          <div className="border 籍贯分布地">
+            <h2>全兰州市犯罪人员籍贯分布地</h2>
+            <Chart option={option5} type='map'/>
+            <span>此地图仅显示了中国的部分区域</span>
+          </div>
+        </section>
         <section className="border section5"></section>
       </main>
       <footer>大屏数据平台利用大数据技术采集犯罪作案信息是一套实时监控的数据系统 Copyright.2017兰州市公安局</footer>

@@ -47,6 +47,7 @@
       background: #0c1139;
 
       &:before {
+        pointer-events: none; //取消鼠标选中
         content: '';
         position: absolute;
         top: 0;

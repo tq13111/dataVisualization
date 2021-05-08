@@ -172,15 +172,19 @@
 
     .年龄段分布 {
       height: px(363);
-
       display: flex;
 
       > .chartWrapper {
-        width: 80%;
+        margin-top: px(-20);
+        width: 100%;
         flex: 1;
         display: flex;
         flex-direction: row;
         justify-content: center;
+
+        > div:last-child {
+          padding-top: 20px;
+        }
       }
     }
   }

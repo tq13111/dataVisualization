@@ -2,7 +2,7 @@ import React from 'react';
 import './home.scss';
 import headerBg from '../images/header.png';
 import Chart from '../components/Chart';
-import {option1, option2, option3, option4, option5, option6, option7} from '../constant/option';
+import {option1, option2, option3, option4, option5, option6, option7, option8} from '../constant/option';
 
 export const Home = () => {
   return (
@@ -92,7 +92,7 @@ export const Home = () => {
             <div className='chartWrapper'>
               <Chart option={option6} />
               <Chart option={option7} />
-              <Chart option={option7} />
+              <Chart option={option8} />
             </div>
           </div>
         </section>

@@ -321,16 +321,12 @@ export const option6 = createEchartsOptions({
   }
 );
 export const option7 = createEchartsOptions({
-    color: ['#8D70F8', '#33A4FA', '#ff7261', '#fd9011', '#0cc17a'],
+    color: ['#8D70F8', '#33A4FA', '#ff7261', '#fd9011', '#0cc17a', '#206691'],
     xAxis: {show: false},
     yAxis: {show: false},
-    grid: {
-      x: px(-100),
-      y: px(-100),
-    },
     legend: {
-      data: ['20-25岁', '25-30岁', '30-35岁', '35-40岁',],
-      bottom: px(10),
+      data: ['20-25岁', '25-30岁', '30-35岁', '35-40岁', '40-45岁', '45-50岁',],
+      bottom: px(0),
       textStyle: {color: 'white'},
       itemWidth: px(18),
       itemHeight: px(10),
@@ -354,7 +350,7 @@ export const option7 = createEchartsOptions({
         label: {
           show: true, position: 'inside', textStyle: {color: 'white', fontSize: px(20)},
           formatter(options) {
-            return options.value * 100 + '%';
+            return (options.value * 100).toFixed() + '%';
           }
         },
         labelLine: {show: false},
@@ -363,12 +359,67 @@ export const option7 = createEchartsOptions({
           borderWidth: px(4)
         },
         data: [
-          {value: 0.2, name: '20-25岁'},
-          {value: 0.3, name: '25-30岁'},
-          {value: 0.4, name: '30-35岁'},
-          {value: 0.1, name: '35-40岁'},
+          {value: 0.1, name: '20-25岁'},
+          {value: 0.2, name: '25-30岁'},
+          {value: 0.25, name: '30-35岁'},
+          {value: 0.15, name: '35-40岁'},
+          {value: 0.13, name: '40-45岁'},
+          {value: 0.17, name: '45-50岁'},
         ]
       }
     ]
+  }
+);
+export const option8 = createEchartsOptions({
+    xAxis: {
+      type: 'category',
+      boundaryGap: false,
+      data: [20, 25, 30, 35, 40, 45, 50],
+      splitLine: {show: true, lineStyle: {color: '#073E78'}},
+      axisTick: {show: false},
+      axisLine: {show: false},
+    },
+    yAxis: {
+      type: 'value',
+      splitLine: {lineStyle: {color: '#073E78'}},
+      axisLabel: {
+        formatter(val) {
+          return val * 100 + '%';
+        }
+      }
+    },
+    title: {
+      text: '犯罪年龄趋势图',
+      left: 'center',
+      top: px(-5),
+      textStyle: {
+        fontSize: px(20),
+        color: '#68a0c9'
+      }
+    },
+    series: [{
+      name: '犯罪年龄趋势图',
+      type: 'line',
+      data: [
+        0.1, 0.2, 0.25,
+        0.15, 0.13, 0.17,
+        0.2
+      ],
+      itemStyle: {
+        color: '#F7A110',
+      },
+      symbol: 'circle',
+      symbolSize: px(12),
+      lineStyle: {width: px(2)},
+      areaStyle: {
+        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+          offset: 0,
+          color: '#F7A110'
+        }, {
+          offset: 1,
+          color: '#1B1D52'
+        }]),
+      }
+    }]
   }
 );

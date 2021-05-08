@@ -2,7 +2,7 @@ import React from 'react';
 import './home.scss';
 import headerBg from '../images/header.png';
 import Chart from '../components/Chart';
-import {option1, option2, option3, option4,option5} from '../constant/option';
+import {option1, option2, option3, option4, option5, option6} from '../constant/option';
 
 export const Home = () => {
   return (
@@ -83,9 +83,16 @@ export const Home = () => {
         </section>
         <section className="section4">
           <div className="border 籍贯分布地">
-            <h2>全兰州市犯罪人员籍贯分布地</h2>
+            <h2>兰州市犯罪人员籍贯分布地</h2>
             <Chart option={option5} type='map'/>
             <span>此地图仅显示了中国的部分区域</span>
+          </div>
+          <div className="border 年龄段分布">
+            <h2>兰州市犯罪人员年龄段分布</h2>
+            <div className='chartWrapper'>
+              <Chart option={option6} />
+
+            </div>
           </div>
         </section>
         <section className="border section5"></section>

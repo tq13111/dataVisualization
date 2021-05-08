@@ -208,11 +208,11 @@ export const option4 = createEchartsOptions({
     }]
   }
 );
-export const option5: EChartsOption = createEchartsOptions({
+export const option5 = createEchartsOptions({
     xAxis: {show: false},
     yAxis: {show: false},
     legend: {
-      data: ['甘肃省', '四川省','青海省'],
+      data: ['甘肃省', '四川省', '青海省'],
       top: px(15),
       textStyle: {color: 'white'},
       itemWidth: px(40),
@@ -220,7 +220,7 @@ export const option5: EChartsOption = createEchartsOptions({
     },
     series: [
       {
-        name:'甘肃省',
+        name: '甘肃省',
         type: 'map',
         mapType: 'CN', // 自定义扩展图表类型
         data: [
@@ -238,7 +238,7 @@ export const option5: EChartsOption = createEchartsOptions({
         }
       },
       {
-        name:'四川省',
+        name: '四川省',
         type: 'map',
         mapType: 'CN', // 自定义扩展图表类型
         data: [
@@ -255,7 +255,7 @@ export const option5: EChartsOption = createEchartsOptions({
         }
       },
       {
-        name:'青海省',
+        name: '青海省',
         type: 'map',
         mapType: 'CN', // 自定义扩展图表类型
         data: [
@@ -271,6 +271,52 @@ export const option5: EChartsOption = createEchartsOptions({
           },
         }
       },
+    ]
+  }
+);
+export const option6: EChartsOption = createEchartsOptions({
+    color: ['#8D70F8', '#33A4FA'],
+    xAxis: {show: false},
+    yAxis: {show: false},
+    legend: {
+      data: ['男', '女'],
+      bottom: px(10),
+      textStyle: {color: 'white'},
+      itemWidth: px(40),
+      itemHeight: px(20),
+    },
+    title: {
+      text: '性别',
+      left: 'center',
+      top: 'center',
+      textStyle: {
+        color: '#2cb4fc',
+        textBorderColor: '#294773',
+        textBorderWidth: px(5)
+      }
+    },
+    series: [
+      {
+        name: '访问来源',
+        type: 'pie',
+        radius: ['60%', '75%'],
+        avoidLabelOverlap: false,
+        label: {
+          show: true, position: 'inside', textStyle: {color: 'white', fontSize: px(20)},
+          formatter(options) {
+            return options.value * 100 + '%';
+          }
+        },
+        labelLine: {show: false},
+        itemStyle: {
+          borderColor: '#0F113A',
+          borderWidth: px(4)
+        },
+        data: [
+          {value: 0.2, name: '女'},
+          {value: 0.8, name: '男'},
+        ]
+      }
     ]
   }
 );

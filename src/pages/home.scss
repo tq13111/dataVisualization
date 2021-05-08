@@ -66,31 +66,34 @@
 
     > .section1 {
       grid-area: box1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      @extend %layout
     }
 
     > .section2 {
       grid-area: box2;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      @extend %layout
+
     }
 
     > .section3 {
       grid-area: box3;
+      @extend %layout
+
     }
 
     > .section4 {
       grid-area: box4;
+      @extend %layout
+
     }
 
     > .section5 {
       grid-area: box5;
+      @extend %layout
+
     }
 
-    .管辖统计, .破获排名, .趋势分析, .时段分析, .战果数对比, .籍贯分布地 {
+    .管辖统计, .破获排名, .趋势分析, .时段分析, .战果数对比, .籍贯分布地, .年龄段分布 {
       height: px(315);
       display: flex;
       flex-direction: column;
@@ -107,7 +110,7 @@
         text-shadow: 0 0 px(10) #fff;
       }
 
-      > .chart {
+      .chart {
         flex: 1;
         width: 100%;
       }
@@ -154,6 +157,7 @@
     .籍贯分布地 {
       height: px(753);
       position: relative;
+
       > .chart {
         flex: 1;
       }
@@ -163,6 +167,19 @@
         bottom: px(20);
         right: px(20);
         color: #8d8b8b;
+      }
+    }
+
+    .年龄段分布 {
+      height: px(363);
+
+      display: flex;
+
+      > .chartWrapper {
+        width: 90%;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
       }
     }
   }

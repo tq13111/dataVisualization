@@ -274,7 +274,7 @@ export const option5 = createEchartsOptions({
     ]
   }
 );
-export const option6: EChartsOption = createEchartsOptions({
+export const option6 = createEchartsOptions({
     color: ['#8D70F8', '#33A4FA'],
     xAxis: {show: false},
     yAxis: {show: false},
@@ -282,8 +282,8 @@ export const option6: EChartsOption = createEchartsOptions({
       data: ['男', '女'],
       bottom: px(10),
       textStyle: {color: 'white'},
-      itemWidth: px(40),
-      itemHeight: px(20),
+      itemWidth: px(18),
+      itemHeight: px(10),
     },
     title: {
       text: '性别',
@@ -315,6 +315,58 @@ export const option6: EChartsOption = createEchartsOptions({
         data: [
           {value: 0.2, name: '女'},
           {value: 0.8, name: '男'},
+        ]
+      }
+    ]
+  }
+);
+export const option7 = createEchartsOptions({
+    color: ['#8D70F8', '#33A4FA', '#ff7261', '#fd9011', '#0cc17a'],
+    xAxis: {show: false},
+    yAxis: {show: false},
+    grid: {
+      x: px(-100),
+      y: px(-100),
+    },
+    legend: {
+      data: ['20-25岁', '25-30岁', '30-35岁', '35-40岁',],
+      bottom: px(10),
+      textStyle: {color: 'white'},
+      itemWidth: px(18),
+      itemHeight: px(10),
+    },
+    title: {
+      text: '年龄段',
+      left: 'center',
+      top: 'center',
+      textStyle: {
+        color: '#2cb4fc',
+        textBorderColor: '#294773',
+        textBorderWidth: px(5)
+      }
+    },
+    series: [
+      {
+        name: '访问来源',
+        type: 'pie',
+        radius: ['60%', '75%'],
+        avoidLabelOverlap: false,
+        label: {
+          show: true, position: 'inside', textStyle: {color: 'white', fontSize: px(20)},
+          formatter(options) {
+            return options.value * 100 + '%';
+          }
+        },
+        labelLine: {show: false},
+        itemStyle: {
+          borderColor: '#0F113A',
+          borderWidth: px(4)
+        },
+        data: [
+          {value: 0.2, name: '20-25岁'},
+          {value: 0.3, name: '25-30岁'},
+          {value: 0.4, name: '30-35岁'},
+          {value: 0.1, name: '35-40岁'},
         ]
       }
     ]

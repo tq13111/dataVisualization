@@ -2,7 +2,7 @@ import React from 'react';
 import './home.scss';
 import headerBg from '../images/header.png';
 import Chart from '../components/Chart';
-import {option1, option2, option3, option4, option5, option6} from '../constant/option';
+import {option1, option2, option3, option4, option5, option6, option7} from '../constant/option';
 
 export const Home = () => {
   return (
@@ -91,7 +91,8 @@ export const Home = () => {
             <h2>兰州市犯罪人员年龄段分布</h2>
             <div className='chartWrapper'>
               <Chart option={option6} />
-
+              <Chart option={option7} />
+              <Chart option={option7} />
             </div>
           </div>
         </section>
@@ -100,4 +101,4 @@ export const Home = () => {
       <footer>大屏数据平台利用大数据技术采集犯罪作案信息是一套实时监控的数据系统 Copyright.2017兰州市公安局</footer>
     </div>
   );
-};
+}

@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useRef} from 'react';
 import './home.scss';
 import headerBg from '../images/header.png';
 import Chart from '../components/Chart';
 import {
   option1,
-  option10, option11, option12,
   option2,
   option3,
   option4,
@@ -12,10 +11,20 @@ import {
   option6,
   option7,
   option8,
-  option9
+  option9,
+  option10, option11, option12,
 } from '../constant/option';
 
 export const Home = () => {
+  const childRef = useRef(null);
+  // const updateChildState = (x) => {
+  //   childRef.current.setOption(x);
+  // };
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     updateChildState(option10);
+  //   }, 1000);
+  // }, []);
   return (
     <div className="home">
       <header style={{backgroundImage: `url(${headerBg})`}}/>
@@ -27,7 +36,7 @@ export const Home = () => {
           </div>
           <div className="border 破获排名">
             <h2>案件破获排名</h2>
-            <Chart option={option2}/>
+            <Chart option={option2} cRef={childRef}/>
           </div>
         </section>
         <section className="section2">

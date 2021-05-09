@@ -1,21 +1,30 @@
 import * as  echarts from 'echarts';
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useImperativeHandle, useRef} from 'react';
 import {EChartsOption} from 'echarts';
-import china from '../geo/china.json'
+import china from '../geo/china.json';
 
 type Props = {
   option: EChartsOption,
-  type?: string
+  type?: string,
+  cRef?: any
 }
-export default ({option, type}: Props) => {
+export default ({cRef, option, type}: Props) => {
   const divRef = useRef(null);
+  const myCharts = useRef(null);
+  useImperativeHandle(cRef, () => ({
+    // setOption 就是暴露给父组件的方法
+    setOption: (newVal) => {
+      myCharts.current.setOption(newVal);
+    }
+  }));
+
   useEffect(() => {
-    const myCharts = echarts.init(divRef.current);
-    if(type ==='map'){
+    myCharts.current = echarts.init(divRef.current);
+    if (type === 'map') {
       // @ts-ignore
       echarts.registerMap('CN', china);
     }
-    myCharts.setOption(option as EChartsOption);
+    myCharts.current.setOption(option as EChartsOption);
   }, []);
 
   return (

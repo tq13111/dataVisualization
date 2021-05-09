@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd3be98e-dfed-4a7d-8f2f-ea13fced5928" name="默认的" comment="添加 pointer-events:none">
+    <list default="true" id="bd3be98e-dfed-4a7d-8f2f-ea13fced5928" name="默认的" comment="完成第十、十一个chart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constant/option.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constant/option.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -255,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620449584407</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="完成第十、十一个chart">
+      <created>1620533153225</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1620533153225</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,6 +298,7 @@
     <MESSAGE value="完成第八个chart" />
     <MESSAGE value="完成第九个chart" />
     <MESSAGE value="添加 pointer-events:none" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加 pointer-events:none" />
+    <MESSAGE value="完成第十、十一个chart" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成第十、十一个chart" />
   </component>
 </project>

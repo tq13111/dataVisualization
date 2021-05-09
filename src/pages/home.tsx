@@ -4,7 +4,7 @@ import headerBg from '../images/header.png';
 import Chart from '../components/Chart';
 import {
   option1,
-  option10,
+  option10, option11, option12,
   option2,
   option3,
   option4,
@@ -113,11 +113,12 @@ export const Home = () => {
             <div className='chartWrapper'>
               <Chart option={option9} />
               <Chart option={option10} />
-
             </div>
           </div><div className="border 街道统计">
             <h2>兰州市犯案发街道统计</h2>
             <div className='chartWrapper'>
+              <Chart option={option11} />
+              <Chart option={option12} />
 
             </div>
           </div><div className="border 年龄段分布">

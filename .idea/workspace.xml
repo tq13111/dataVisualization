@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd3be98e-dfed-4a7d-8f2f-ea13fced5928" name="默认的" comment="完成第十二、十三个chart">
-      <change beforePath="$PROJECT_DIR$/src/constant/baseChartOptions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constant/baseChartOptions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constant/option.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constant/option.ts" afterDir="false" />
+    <list default="true" id="bd3be98e-dfed-4a7d-8f2f-ea13fced5928" name="默认的" comment="调整样式">
+      <change afterPath="$PROJECT_DIR$/READEME.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
     </list>
-    <list id="72aaf904-3b67-4854-9e38-714ddff1d2a6" name="实时更新数据" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Chart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/chart.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.tsx" afterDir="false" />
-    </list>
+    <list id="72aaf904-3b67-4854-9e38-714ddff1d2a6" name="实时更新数据" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -289,7 +284,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620554327673</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="完成第十二、十三个chart">
+      <created>1620566988828</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1620566988828</updated>
+    </task>
+    <task id="LOCAL-00034" summary="调整样式">
+      <created>1620567012171</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1620567012171</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,8 +336,9 @@
     <MESSAGE value="完成第九个chart" />
     <MESSAGE value="添加 pointer-events:none" />
     <MESSAGE value="完成第十、十一个chart" />
-    <MESSAGE value="完成第十二、十三个chart" />
     <MESSAGE value="完成第十四个chart" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成第十四个chart" />
+    <MESSAGE value="完成第十二、十三个chart" />
+    <MESSAGE value="调整样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整样式" />
   </component>
 </project>

@@ -4,7 +4,8 @@ import px from '../shared/px';
 import * as  echarts from 'echarts';
 import {EChartsOption} from 'echarts';
 
-const colors = {'青海省': '#BB31F7', '甘肃省': '#ddf66a', '四川省': '#06E1EE'};
+const colors1 = {'青海省': '#BB31F7', '甘肃省': '#ddf66a', '四川省': '#06E1EE'};
+const colors2 = ['#F46064', '#F38E1C', '#1CDB7C', '#8D70F8', '#33A4FA'];
 
 export const option1 = createEchartsOptions({
   ...baseChartOptions,
@@ -41,10 +42,9 @@ export const option2 = createEchartsOptions({
     y2: px(60),
   },
   legend: {
-    data: ['一队', '二队'],
     right: px(15),
     bottom: px(15),
-    textStyle: {color: 'white'},
+    textStyle: {color: '#79839E'},
     itemWidth: px(40),
     itemHeight: px(20),
   },
@@ -103,7 +103,7 @@ export const option2 = createEchartsOptions({
 export const option3 = createEchartsOptions({
     legend: {
       bottom: px(10),
-      textStyle: {color: 'white'},
+      textStyle: {color: '#79839E'},
       itemWidth: px(30),
       itemHeight: px(16)
     },
@@ -214,7 +214,7 @@ export const option5 = createEchartsOptions({
     legend: {
       data: ['甘肃省', '四川省', '青海省'],
       top: px(15),
-      textStyle: {color: 'white'},
+      textStyle: {color: '#79839E'},
       itemWidth: px(40),
       itemHeight: px(20),
     },
@@ -229,7 +229,7 @@ export const option5 = createEchartsOptions({
         label: {show: false, color: 'white'},
         itemStyle: {
           areaColor: '#010D3D',
-          color: colors['甘肃省'],
+          color: colors1['甘肃省'],
           borderColor: '#01A7F7',
           emphasis: {
             label: {color: 'white'},
@@ -246,7 +246,7 @@ export const option5 = createEchartsOptions({
         ],
         itemStyle: {
           areaColor: '#010D3D',
-          color: colors['四川省'],
+          color: colors1['四川省'],
           borderColor: '#01A7F7',
           emphasis: {
             label: {color: 'white'},
@@ -263,7 +263,7 @@ export const option5 = createEchartsOptions({
         ],
         itemStyle: {
           areaColor: '#010D3D',
-          color: colors['青海省'],
+          color: colors1['青海省'],
           borderColor: '#01A7F7',
           emphasis: {
             label: {color: 'white'},
@@ -281,7 +281,7 @@ export const option6 = createEchartsOptions({
     legend: {
       data: ['男', '女'],
       bottom: px(10),
-      textStyle: {color: 'white'},
+      textStyle: {color: '#79839E'},
       itemWidth: px(18),
       itemHeight: px(10),
     },
@@ -325,9 +325,8 @@ export const option7 = createEchartsOptions({
     xAxis: {show: false},
     yAxis: {show: false},
     legend: {
-      data: ['20-25岁', '25-30岁', '30-35岁', '35-40岁', '40-45岁', '45-50岁',],
       bottom: px(0),
-      textStyle: {color: 'white'},
+      textStyle: {color: '#79839E'},
       itemWidth: px(18),
       itemHeight: px(10),
     },
@@ -348,7 +347,12 @@ export const option7 = createEchartsOptions({
         radius: ['60%', '75%'],
         avoidLabelOverlap: false,
         label: {
-          show: true, position: 'inside', textStyle: {color: 'white', fontSize: px(20)},
+          show: true,
+          position: 'inside',
+          textStyle: {
+            color: 'white',
+            fontSize: px(20)
+          },
           formatter(options) {
             return (options.value * 100).toFixed() + '%';
           }
@@ -423,3 +427,84 @@ export const option8 = createEchartsOptions({
     }]
   }
 );
+export const option9 = createEchartsOptions({
+    xAxis: {
+      data: ['入室抢劫', '当街偷盗', '团伙诈骗', '刑事案件', '民事案件'],
+      axisTick: {show: false},
+      axisLine: {
+        lineStyle: {color: '#083B70'}
+      },
+      axisLabel: {
+        formatter(val) {
+          if (val.length > 2) {
+            const array = val.split('');
+            array.splice(2, 0, '\n');
+            return array.join('');
+          } else {
+            return val;
+          }
+        }
+      },
+    },
+    yAxis: {
+      splitLine: {show: false},
+      splitNumber: 10,
+      axisLine: {
+        show: true,
+        lineStyle: {color: '#083B70'}
+      }
+    },
+    series: [{
+      type: 'bar',
+      data: [40, 22, 20, 18, 32],
+      color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+        offset: 0,
+        color: '#0A97FB'
+      }, {
+        offset: 1,
+        color: '#1E34FA'
+      }]),
+    }]
+  }
+);
+export const option10 = createEchartsOptions({
+    color: colors2,
+    xAxis: {show: false},
+    yAxis: {show: false},
+    legend: {
+      bottom: px(0),
+      textStyle: {color: '#79839E'},
+      itemWidth: px(18),
+      itemHeight: px(10),
+    },
+    series: [
+      {
+        startAngle: -20,
+        type: 'pie',
+        radius: ['15%', '70%'],
+        avoidLabelOverlap: false,
+        label: {
+          show: true, position: 'outside', textStyle: {color: 'white', fontSize: px(20)},
+          distanceToLabelLine: 0,
+          formatter(options) {
+            return options.value * 100 + '%';
+          }
+        },
+        labelLine: {show: true, length: 0, smooth: true},
+
+        roseType: 'area',
+        itemStyle: {
+          shadowBlur: px(200),
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        },
+        data: [
+          {value: 0.36, name: '刑事案件'},
+          {value: 0.20, name: '民事案件'},
+          {value: 0.18, name: '经济案件'},
+          {value: 0.24, name: '其他案件'},
+        ]
+      }
+    ]
+  }
+);
+

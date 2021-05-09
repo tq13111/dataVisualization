@@ -2,7 +2,18 @@ import React from 'react';
 import './home.scss';
 import headerBg from '../images/header.png';
 import Chart from '../components/Chart';
-import {option1, option2, option3, option4, option5, option6, option7, option8} from '../constant/option';
+import {
+  option1,
+  option10,
+  option2,
+  option3,
+  option4,
+  option5,
+  option6,
+  option7,
+  option8,
+  option9
+} from '../constant/option';
 
 export const Home = () => {
   return (
@@ -96,7 +107,26 @@ export const Home = () => {
             </div>
           </div>
         </section>
-        <section className="border section5"></section>
+        <section className="section5">
+          <div className="border 类型统计">
+            <h2>兰州市案发类型统计</h2>
+            <div className='chartWrapper'>
+              <Chart option={option9} />
+              <Chart option={option10} />
+
+            </div>
+          </div><div className="border 街道统计">
+            <h2>兰州市犯案发街道统计</h2>
+            <div className='chartWrapper'>
+
+            </div>
+          </div><div className="border 年龄段分布">
+            <h2>作案手段分析</h2>
+            <div className='chartWrapper'>
+
+            </div>
+          </div>
+        </section>
       </main>
       <footer>大屏数据平台利用大数据技术采集犯罪作案信息是一套实时监控的数据系统 Copyright.2017兰州市公安局</footer>
     </div>

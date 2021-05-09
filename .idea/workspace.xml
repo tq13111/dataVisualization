@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd3be98e-dfed-4a7d-8f2f-ea13fced5928" name="默认的" comment="完成第九个chart" />
+    <list default="true" id="bd3be98e-dfed-4a7d-8f2f-ea13fced5928" name="默认的" comment="添加 pointer-events:none">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constant/option.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constant/option.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -243,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620449080241</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="添加 pointer-events:none">
+      <created>1620449584407</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1620449584407</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +291,7 @@
     <MESSAGE value="完成第七个chart" />
     <MESSAGE value="完成第八个chart" />
     <MESSAGE value="完成第九个chart" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成第九个chart" />
+    <MESSAGE value="添加 pointer-events:none" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加 pointer-events:none" />
   </component>
 </project>

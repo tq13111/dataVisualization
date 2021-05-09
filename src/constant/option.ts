@@ -2,7 +2,6 @@ import {baseChartOptions} from './baseChartOptions';
 import {createEchartsOptions} from '../shared/create-echarts-options';
 import px from '../shared/px';
 import * as  echarts from 'echarts';
-import {EChartsOption} from 'echarts';
 
 const colors1 = {'青海省': '#BB31F7', '甘肃省': '#ddf66a', '四川省': '#06E1EE'};
 const colors2 = ['#F46064', '#F38E1C', '#1CDB7C', '#8D70F8', '#33A4FA'];
@@ -284,12 +283,14 @@ export const option6 = createEchartsOptions({
       textStyle: {color: '#79839E'},
       itemWidth: px(18),
       itemHeight: px(10),
+
     },
     title: {
       text: '性别',
       left: 'center',
       top: 'center',
       textStyle: {
+        fontSize:px(32),
         color: '#2cb4fc',
         textBorderColor: '#294773',
         textBorderWidth: px(5)
@@ -325,16 +326,18 @@ export const option7 = createEchartsOptions({
     xAxis: {show: false},
     yAxis: {show: false},
     legend: {
-      bottom: px(0),
+      bottom: 'bottom',
       textStyle: {color: '#79839E'},
       itemWidth: px(18),
       itemHeight: px(10),
+      itemGap:px(10)
     },
     title: {
       text: '年龄段',
       left: 'center',
       top: 'center',
       textStyle: {
+        fontSize:px(32),
         color: '#2cb4fc',
         textBorderColor: '#294773',
         textBorderWidth: px(5)
@@ -476,6 +479,7 @@ export const option10 = createEchartsOptions({
       textStyle: {color: '#79839E'},
       itemWidth: px(18),
       itemHeight: px(10),
+      itemGap:px(10)
     },
     series: [
       {
@@ -526,9 +530,10 @@ export const option11 = createEchartsOptions({
       orient: 'vertical',
       left: 'left',
       top: 'bottom',
-      textStyle: {color: 'white'},
+      textStyle: {color: '#79839E',fontSize:px(14)},
       itemWidth: px(10),
       itemHeight: px(10),
+      itemGap:px(16),
       formatter(name) {
         const value = (data.find(i => i.name === name)?.value * 100).toFixed() + '%';
         return name + ' ' + value;

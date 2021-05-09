@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd3be98e-dfed-4a7d-8f2f-ea13fced5928" name="默认的" comment="完成第十、十一个chart">
+    <list default="true" id="bd3be98e-dfed-4a7d-8f2f-ea13fced5928" name="默认的" comment="完成第十二、十三个chart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constant/option.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constant/option.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +57,7 @@
       <workItem from="1620015331286" duration="15144000" />
       <workItem from="1620117131194" duration="21667000" />
       <workItem from="1620363271401" duration="7918000" />
+      <workItem from="1620535319773" duration="4329000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1620019795095</created>
@@ -261,7 +262,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620533153225</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="完成第十二、十三个chart">
+      <created>1620534966535</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1620534966535</updated>
+    </task>
+    <task id="LOCAL-00031" summary="完成第十二、十三个chart">
+      <created>1620535059195</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1620535059195</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +314,7 @@
     <MESSAGE value="完成第九个chart" />
     <MESSAGE value="添加 pointer-events:none" />
     <MESSAGE value="完成第十、十一个chart" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成第十、十一个chart" />
+    <MESSAGE value="完成第十二、十三个chart" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成第十二、十三个chart" />
   </component>
 </project>

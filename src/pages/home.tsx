@@ -42,7 +42,7 @@ export const Home = () => {
         </section>
         <section className="border section3">
           <div className="战果数对比">
-            <h2>往年战果树对比</h2>
+            <h2>往年战果数对比</h2>
             <table>
               <thead>
               <tr>
@@ -101,9 +101,9 @@ export const Home = () => {
           <div className="border 年龄段分布">
             <h2>兰州市犯罪人员年龄段分布</h2>
             <div className='chartWrapper'>
-              <Chart option={option6} />
-              <Chart option={option7} />
-              <Chart option={option8} />
+              <Chart option={option6}/>
+              <Chart option={option7}/>
+              <Chart option={option8}/>
             </div>
           </div>
         </section>
@@ -111,25 +111,87 @@ export const Home = () => {
           <div className="border 类型统计">
             <h2>兰州市案发类型统计</h2>
             <div className='chartWrapper'>
-              <Chart option={option9} />
-              <Chart option={option10} />
+              <Chart option={option9}/>
+              <Chart option={option10}/>
             </div>
-          </div><div className="border 街道统计">
+          </div>
+          <div className="border 街道统计">
             <h2>兰州市犯案发街道统计</h2>
             <div className='chartWrapper'>
-              <Chart option={option11} />
-              <Chart option={option12} />
+              <Chart option={option11}/>
+              <Chart option={option12}/>
 
             </div>
-          </div><div className="border 年龄段分布">
+          </div>
+          <div className="border 手段分析">
             <h2>作案手段分析</h2>
-            <div className='chartWrapper'>
-
-            </div>
+            <table>
+              <thead>
+              <tr>
+                <th colSpan={2}>类型</th>
+                <th>单数</th>
+                <th>总计</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td rowSpan={4}>入室盗窃</td>
+                <td>翻窗入室</td>
+                <td>10</td>
+                <td rowSpan={4}>80</td>
+              </tr>
+              <tr>
+                <td>撬锁入室</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>技术开锁</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>撬防护栏</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td rowSpan={2}>抢夺</td>
+                <td>摩托车飞车抢夺</td>
+                <td>22</td>
+                <td rowSpan={2}>44</td>
+              </tr>
+              <tr>
+                <td>徒手抢夺</td>
+                <td>22</td>
+              </tr>
+              <tr>
+                <td rowSpan={3}>扒窃</td>
+                <td>公交车扒窃</td>
+                <td>40</td>
+                <td rowSpan={3}>68</td>
+              </tr>
+              <tr>
+                <td>车站扒窃</td>
+                <td>22</td>
+              </tr>
+              <tr>
+                <td>街面扒窃</td>
+                <td>45</td>
+              </tr>
+              <tr>
+                <td rowSpan={2}>诈骗</td>
+                <td>甩票子诈骗</td>
+                <td>22</td>
+                <td rowSpan={2}>102</td>
+              </tr>
+              <tr>
+                <td>买手机诈骗</td>
+                <td>80</td>
+              </tr>
+              </tbody>
+            </table>
           </div>
         </section>
       </main>
       <footer>大屏数据平台利用大数据技术采集犯罪作案信息是一套实时监控的数据系统 Copyright.2017兰州市公安局</footer>
     </div>
   );
-}
+};
